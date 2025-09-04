@@ -1,0 +1,140 @@
+
+
+                    /* Pseudo classes
+
+:active -> quando o elemento está ativo, ou seja, está sendo pressionado
+:visited -> seleciona o link que foi visitado
+:hover -> quando o mouse passe em cima do elemento
+:checked -> usado em radio / checkbox / select
+:disabled -> elemento desabilitado / button / input
+:enabled -> elemento está habilitado
+:focus -> é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuario seleciona o elemento 
+:read-only -> seleciona input ou textarea que são apenas leitura
+:empty -> elemento que não tem filho
+
+
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin-top: 50px;
+    display: flex;
+    border: 2px solid red;
+    width: 550px;
+    height: 50px;
+    margin-left: 25px;
+    justify-content: center;
+    align-items: center
+}
+
+a {
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+     margin-left: 25px;
+     margin-top: 15px;
+}
+
+
+.input-1 {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.input-2 {
+    height: 30px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.input-3 {
+    height: 30px;
+    width: 450px;
+    border: 2px solid black;
+    font-size: 18PX;
+    text-align: center;
+}
+    
+
+
+/* a:active {
+    color: blue;
+}
+ (é quando o seu elemento for ativado) */
+
+
+ a:visited {
+    color: purple;
+}
+/* 
+(é usado quando o elemento é aceçado e fica vermelho indicando que já foi acessado)
+ */ 
+
+
+ 
+h1:hover {
+    color: crimson;
+}
+/* 
+(è usado quando voce passa o mouse no elemento e ele faz algumma ação)
+  */
+
+
+
+
+.input-1:checked {
+    height: 50px;
+    width: 50px;
+}
+/* É quando voce acinala ou escolhe o elemento e ela muda o visual que vc configurou 
+ */ 
+
+
+ .input-2:focus {
+    outline: none;
+    border: 2.5px solid blue;
+ }
+/*  
+É usado quando seleciona um elemento ele fica selecionado para mostar que esta FOCADO naquele elemento)
+ */
+ 
+
+.input-3:read-only {
+    border:  2.5px solid rgb(2, 90, 2);
+}
+
+/* 
+ é utilizado para quando o elemento estiver em (readonly) 
+ por exemplo no input ele vai ficar conforme a configuração colocada no read-only  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

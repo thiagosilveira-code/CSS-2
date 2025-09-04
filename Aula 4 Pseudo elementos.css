@@ -1,0 +1,65 @@
+        /* Pseudo elementos */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+input {
+    margin: 50px 25px;
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    border: 2px solid red;
+    color: green;
+}
+
+
+/* Pseudo elementos são usados para trocar algumas coisinhas do elementor por EX */
+/* (Pseudo elementos é utilizado :: para usar as configuraçoes) */
+
+input::placeholder {
+    color: red;
+}
+
+/* Outro Exemplo */
+
+p { 
+    color: blue;
+    font-size: 18px;
+    margin-left: 25px;
+    width: 450px;
+}
+
+p::first-letter{
+    color: red;
+    font-weight: bold;
+}
+
+div {
+    margin: 25px 0 0 25px;
+}
+
+/* Agora o Pseudo elementos que são MAIS UTILIZADOS */
+ a {
+    color: blue;
+    font-weight: bold;
+    font-size: 50px;
+ }
+
+ /*(Antes do meu alemento)*/
+
+ a::before { 
+        content: "☛" ;
+ }
+
+ /*(Depois do meu alemento)*/
+
+ a::after {
+    content: "💸";
+ }
+

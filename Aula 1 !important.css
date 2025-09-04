@@ -1,0 +1,15 @@
+
+
+                /* Aula 1 !important */
+
+
+/* A teg !important é utilizada para quando voce coloca mais tags 
+dentro de uma class do mesmo estilo e voce quer que uma daquelas tegis da mesma seja a que voce quer piorizar 
+
+Ex: 
+
+h1 {
+    color:red !important; 
+    color:blue;
+(fazendo desse jeito voce vai piorizar a cor onde esteja a teg !important)
+} */

@@ -1,0 +1,64 @@
+
+            /* Vamos Falar de Position pt. 1
+    
+     Position: static (padrã0) - Não aceitas valores de top, bottomn reght e lef.
+     Position: fixed - fixa o elemento na tela
+     Position: sticky - age como um adesivo, fixo o elemento só onde eu determinar.
+     Position: relative - posição relativa a posição inicial dele
+            - Se nao tiver pai / pai for static -> posiciona referente a pagina 
+            - Se o pai NÂO for static -> Posiciona referente ao pai      */
+
+
+/* 
+    Propriedades:
+        - top
+        - bottom
+        - left
+        - right
+ */
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vw;
+    width: 200vw;
+}
+
+.div-pai {
+    height: 350px;
+    width: 350px;
+    background-color:brown;
+    /* position: fixed;  */
+   top: 500px;
+   right: 0;
+
+    /* (Usada para ficçar uma imagen ou botão para seguir nas rolagen da pagina)
+    EX: botão do whatzapp nas paginas      */
+}    
+
+.div-filho {
+    height:150px ;
+    width: 150px;
+    background-color: aqua;
+}
+
+.div-3 {
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    position: sticky;
+    top: 50px;
+margin-top: 120px;
+margin-left: 150px;
+
+    
+
+/* (è como se fosse um adesivo que ela vai mostar tudo porem quando voce 
+terminar de rolar a bara ela te acompanhara estilo o fixed ) */
+}

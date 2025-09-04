@@ -1,0 +1,191 @@
+/* 
+          Pseudo classes pt. 2   
+
+
+:first-child -> prinmeiro filho / ex: primeira li de uma ul / primeiro span de uma div  
+:first-of-type -> primeiro elemento de seu tipo entre os filhos de um elemento pai
+:last-child -> último filho
+:last-of-type -> último elementos de seu tipo entre os filhos de seu elemento pai
+:not() -> estiliza os elementos, exceto o que esta dentro do ()
+:nth-child() -> seleciona o elemento baseado na sua posição. Ex: :nth-child(3)
+: :nth-last-child() -> seleciona o elemento baseado na sua posição, contando de trás para frente.
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+ul {
+    border: 2px solid blue;
+    display: block;
+    width: 30%;
+    margin-left: 45px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    align-items: center
+   
+}
+
+p {
+    margin-left: 15px;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+span { 
+    font-size: 18px;}
+
+
+li {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+div {
+    display: block;
+    border: 2.8px solid rgb(2, 65, 2);
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 50px 25px;
+    padding: 15px;
+}
+
+h4 {
+    margin-left: 15px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+h5 {
+    margin-left: 15px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+h6 {
+    margin-left: 15px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+h1 {
+    margin-left: 15px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+
+li:first-child {
+    color: blue;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 25px;
+}
+
+/* 
+É Utilizado para modificar O PRIMEIRO de varios elemenentos filhos dentro do pai,
+com essa teg só modifica o Primeiro elemento filho
+ */
+
+
+span:first-of-type {
+    margin-left: 15px;
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* 
+É utilizado para Modificar o PRIMEIRO elemento do tipo dele, 
+por ex: se tiver 10 tags span, e colocar o codigo só vai modificar o PRIMEIRO
+Outro Exemplo Abaixo
+*/
+
+p:first-of-type{
+    margin-left: 25px;
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+        /* ----------------------------------------------------         */
+
+
+
+li:last-child {
+    color: blue;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 25px;
+}
+
+/* 
+É Utilizado para modificar O ULTIMO de varios elemenentos filhos dentro do pai,
+com essa teg só modifica o ULTIMO elemento filho
+ */
+
+
+ p:last-of-type {
+    margin-left: 25px;
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+ }
+
+/* 
+É utilizado para Modificar o ULTIMO elemento do tipo dele, 
+por ex: se tiver 10 tags <p>, e colocar o codigo só vai modificar o ULTIMO
+ */
+
+
+ .div-2 :not(h1) {
+        color: blue;
+        font-weight: 700;
+        margin: 10px 0 10px 15px;
+        text-align: center;
+ }
+
+/*  
+É utilizado para quando tiver um Elemento PAI com varias tegs como, <p>, <h2>, <button>, <a>
+o que tiber no not (nome da teg) o Elemento nao serar auterado
+ */
+
+
+ .div-3 :nth-child(2) {
+    color: rgb(233, 9, 9);
+        font-weight: 700;
+        margin: 10px 0 10px 15px;
+        text-align: center;
+ }
+
+/*  
+É Utilizado quando tem Varias Tegs filhos dentro da Teg Pai e com essa teg voce pode selecionar 
+qual das ondens das tegs filhos voce quer ALTERAR colocando sua prdem dentro do ().div-2
+Essa ONder é de CIMA para BAIXO
+
+*/
+
+
+.div-3 :nth-last-child(1) {
+        color: rgb(199, 91, 3);
+        font-weight: 700;
+        margin: 10px 0 10px 15px;
+        text-align: center;
+}
+
+/*  
+É Utilizado quando tem Varias Tegs filhos dentro da Teg Pai e com essa teg voce pode selecionar 
+qual das ondens das tegs filhos voce quer ALTERAR colocando sua prdem dentro do ().div-2
+Essa ONder é de BAIXO para CIMA
+
+*/
+
+

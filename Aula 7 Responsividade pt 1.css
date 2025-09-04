@@ -1,0 +1,33 @@
+/* 
+
+            Responsividade pt. 1
+
+ @media {} : É utilizado para ajustar o elemento para ficar congruente 
+ com todos os dispositiveis moveis 
+
+ */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    height: 500px;
+    width: 500px;
+    background: blue;
+}
+
+
+@media (max-width: 600px) {
+    div {
+        background: rgb(1, 78, 1);
+        height: 250px;
+        width: 250px;
+    }
+}
+
+
+
+
