@@ -25,7 +25,7 @@ header {
     height: 41px;
     border-radius: 20.5px;
     background: #665AE1;
-    border: none;
+    border: 1px solid red;
     color: #FFF;
     font-size: 24px;
     font-style: normal;
